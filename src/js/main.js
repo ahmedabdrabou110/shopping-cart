@@ -24,11 +24,11 @@ let generateProducts = () => {
         <div class="price-quantity">
           <h2>$ ${price} </h2>
           <div class="buttons">
-            <i onclick="decrement(${id})" class="fa fa-minus"></i>
+            <img  src="../../images/minus.svg" onclick="decrement(${id})" width="30" height="10"/>
             <div id=${id} class="quantity">
             ${search.item === undefined ? 0 : search.item}
             </div>
-            <i onclick="increment(${id})" class="fa fa-plus"></i>
+            <img onclick="increment(${id})" src="../../images/plus.svg"/>
           </div>
         </div>
       </div>
